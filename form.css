@@ -1,0 +1,117 @@
+#title {
+    color: rgb(81, 81, 231);
+    text-align: center;
+}
+
+.tex {
+    color: rgb(7, 73, 117);
+   
+}
+
+.question {
+    color: rgb(10, 107, 70);
+}
+
+h1, h2 {
+    background-color: aquamarine;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Layout of the form */
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* Two colums */
+    gap: 20px 40px;                   /* space vertical and horizontal */
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Each label over the input */
+.grid-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Inputs y textarea */
+.grid-form input[type="text"],
+.grid-form input[type="date"],
+.grid-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Textarea ocupa ambas columnas */
+.grid-form textarea {
+    grid-column: 1 / 3;
+}
+
+/* Radio buttons en una sola fila */
+.radio-group {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.center-field {
+    grid-column: 1 / 3;     /* ocupa las dos columnas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* centra el contenido horizontalmente */
+    text-align: center;
+}
+
+.radio-row {
+    display: flex;            /* pone Yes y No en una fila */
+    flex-direction: row;
+    gap: 20px;                /* espacio entre Yes y No */
+    justify-content: center;  /* mantiene ambos centrados */
+}
+
+/* Botón ocupa todo el ancho */
+.grid-form button[type="submit"],
+.grid-form input[type="submit"] {
+    grid-column: 1 / 3;
+    justify-self: center;  /* Center the botton */
+    padding: 15px;
+    background: #20aa59;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.grid-form button:hover,
+.grid-form input[type="submit"]:hover {
+    background: #0f5aa3;
+}
+
+.attach-field {
+    grid-column: 1 / 3;        /* ocupa las dos columnas */
+    display: flex;             /* permite usar flexbox */
+    flex-direction: column;    /* label arriba, input abajo */
+    align-items: center;       /* centra horizontalmente */
+    text-align: center;        /* centra el texto del label */
+    gap: 10px;                 /* separación entre label y input */
+}
+
+
+.form-container {
+    width: 50%;                  /* ancho del cuadro */
+    margin: 20px auto;           /* centrar el cuadro */
+    padding: 20px;               /* espacio interno */
+    background-color: #ffffff;   /* color del fondo del cuadro */
+    border: 1px solid #ccc;      /* borde del cuadro */
+    border-radius: 12px;         /* esquinas curvas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombreado opcional */
+    
+}
+

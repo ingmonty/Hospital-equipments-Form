@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manteinance request</title>
+    <link rel="stylesheet" href="form.css"/>
+    
+</head>
+
+
+<body>  <!-- Title. -->
+    <header>
+    <h1 id="title1">Manteinance request</h1>
+    </header>
+<!-- Contex of the problem. -->
+<section>
+    <h2 id="title2">Contex of the problem in the Manteinance request related to biomedical equipments in Hospitals.</h2>
+    <p class="tex">
+        The Dominican Republic has great potential to achieve better standards in healthcare services. 
+        To make this potential a reality, it is necessary to investigate common problems and propose 
+        simple and effective solutions that have not been implemented before.
+    </p>
+
+    <p class="tex">
+        In Santo Domingo, the public hospital network manages a large amount of medical equipment but lacks sufficient 
+        biomedical engineers to address nonconformities and technical issues. In the main office, only one engineer has 
+        the knowledge required to evaluate and solve these problems. However, the current reporting process is extremely 
+        inefficient, one report can take up to 14 days to reach the main office due to physical paperwork and bureaucratic delays.
+    </p>
+
+
+    <p class="tex">
+        To simplify the reporting process and reduce the time it takes to receive technical information, the proposed solution is 
+        to create a web-based reporting form. Hospitals will be able to report equipment nonconformities directly to the main 
+        office, reducing delays and eliminating the risk of losing physical documents.
+    </p>
+
+    <p class="tex">
+        The form will be designed to be user-friendly and accessible, allowing hospital staff to quickly and easily report issues 
+        with biomedical equipment. It will include fields for essential information such as the type of equipment, the nature of the 
+        problem, and any relevant details that can help the biomedical engineer diagnose and address the issue, and including go prepared 
+        with refacciontions that may solution the problem.
+    </p>
+</section>
+
+
+
+
+<section class="form-container">
+
+<form class="grid-form">
+    <h2 id="title3" style="grid-column: 1 / 3;">Manteinance request form</h2>
+
+    <div>
+        <label for="hospital-name">Hospital Name:</label>
+        <input type="text" id="hospital-name" name="hospital-name" required>
+    </div>
+
+    <div>
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+
+    <div>
+        <label for="area-of-work">Area of work:</label>
+        <input type="text" id="area-of-work" name="area-of-work" required>
+    </div>
+
+    <div>
+        <label for="equipment-reported">Equipment reported:</label>
+        <input type="text" id="equipment-reported" name="equipment-reported" required>
+    </div>
+
+    <div>
+        <label for="manufacturer">Manufacturer:</label>
+        <input type="text" id="manufacturer" name="manufacturer" required>
+    </div>
+
+    <div>
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required>
+    </div>
+
+    <div class="center-field">
+        <label for="serial-number">Serial number:</label>
+        <input type="text" id="serial-number" name="serial-number" required>
+    </div>
+
+    <!-- Grupo Radio -->
+<div class="center-field">
+    <label>Does the equipment turn on?</label>
+
+    <div class="radio-row">
+        <label><input type="radio" name="option" value="Yes" required> Yes</label>
+        <label><input type="radio" name="option" value="No" required> No</label>
+    </div>
+</div>
+
+    <div class="attach-field">
+        <label for="avatar">Please attach an image of the equipment to be reported:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        
+    </div>
+
+    <div style="grid-column: 1 / 3;">
+        <label for="coment">Describe the symptoms of the equipment:</label>
+        <textarea id="coment" rows="5" placeholder="Example: The equipment started to make a noise..."></textarea>
+    </div>
+
+
+    <button type="submit">Submit</button>
+</form>
+</section>
+</body>
+
+
+</html>
+
+
+
+
+
+<!-- This is how I was doing it before, because I didn't know about grid layout.
+
+
+<form>
+    <h2 id="title">Manteinance request form</h2>
+
+    <label class="question" for="hospital-name">Hospital Name:</label>
+    <input type="text" id="hospital-name" name="hospital-name" required>
+
+
+    <label class="question" for="date">Select a date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label class="question" for="area-of-work">Area of work:</label>
+    <input type="text" id="area-of-work" name="area-of-work" required>
+
+    <label class="question" for="equipment-reported">Equipment reported:</label>
+    <input type="text" id="equipment-reported" name="equipment-reported" required><br><br>
+
+    <label class="question" for="manufacturer">Manufacturer:</label>
+    <input type="text" id="manufacturer" name="manufacturer" required>
+
+    <label class="question" for="model">Model:</label>
+    <input type="text" id="model" name="model" required><br><br>
+
+    <label class="question" for="serial number">Serial number:</label>
+    <input type="text" id="serial number" name="serial number" required>
+
+    <label class="question">Does the equipment turn on?</label> 
+    <input type="radio" id="Yes" name="option" value="Yes" required>
+    Yes
+    <input type="radio" id="No" name="option" value="No" required>
+    No
+    <br><br>
+
+    <label class="question" for ="coment">Describe the sintoms of the equipment:</label><br>
+    <textarea rows="5" cols="50">Example: The equipment started to make a noise...</textarea><br><br>
+    <input type="submit" value="Enviar comentario"><br><br>
+
+    <button type="submit">Submit</button>
+
+</form> -->
